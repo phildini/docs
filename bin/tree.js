@@ -26,7 +26,7 @@ var emitter = require('walkdir')(path.resolve(__dirname, '../content/'))
 
 emitter.on('file', function (filepath, stat) {
   // We only want markdown files
-  if (!filepath.match(/\.md$/)) return
+  if (!filepath.match(/\.md$/) || filepath.match(/npm-faq.md/)) return
 
   var page = {
     title: null,
