@@ -7,11 +7,15 @@ featured: true
 
 ## Sponsorship Types
 
-![org-sponsorship levels](/images/org-sponsorships.png)
+![org-sponsorship levels](/images/orgs/ships-dashboard.png)
 
 Let's say we have an Organization, `@ag_org`. This Organization
 was created by user `@ag_dubs`, and therefore she is the Super 
-Admin. Being a Super Admin, she adds 3 members to her team:
+Admin. 
+
+![super admin](/images/orgs/ships-superadmin.png)
+
+Being a Super Admin, she adds 3 members to her team:
 
 - Jacques Derrida
 - Carl Sagan
@@ -23,39 +27,42 @@ There are three types of Sponsorship that can occur:
 - Paid by Self or Another Organization
 - Not Paid
 
-- ### Paid by Current Organization
+### Paid by Current Organization
 
-  When Super Admin, `@ag_dubs`, added `JacquesDerrida` to the Organization,
-  `JacquesDerrida` did not already belong to an organization nor did he have a
-  subscription to private packages.
+When Super Admin, `@ag_dubs`, added `JacquesDerrida` to the Organization,
+`JacquesDerrida` did not already belong to an organization nor did he have a
+subscription to private packages.
 
-  By default, when the Super Admin added him to the Organization, `JacquesDerrida`
-  was set as a member of the Organization, **paid by the current organization**.
+By default, when the Super Admin added him to the Organization, `JacquesDerrida`
+was set as a member of the Organization, **paid by the current organization**.
+This appears in the UI like this:
 
-  As a result, `JacquesDerrida` can:
-    - Be added to any/all of the Organization's teams
-    - See the teams he is on
-    - See the members of those teams
-    - Collaborate on and publish any package that his team membership grants him
-      access to
+![paid by current org](/images/orgs/ships-paidcurrent.png)
 
-  `JacquesDerrida` cannot:
-    - See all of the Organization's teams
-    - See all members of the Organization
+As a result, `JacquesDerrida` can:
+  - Be added to any/all of the Organization's teams
+  - See the teams he is on
+  - See the members of those teams
+  - Collaborate on and publish any package that his team membership grants him
+    access to
 
-- ### Paid by Self or Another Organization
+`JacquesDerrida` cannot:
+  - See all of the Organization's teams
+  - See all members of the Organization
 
-  - #### Paid for by Another Organization
+### Paid by Self or Another Organization
+
+- #### Paid for by Another Organization
   
-    When Super Admin, `@ag_dubs`, added `CarlSagan` to the Organization, `CarlSagan`
-    already belonged to another Organization, (`@nasa-org`, duh).
+  When Super Admin, `@ag_dubs`, added `CarlSagan` to the Organization, `CarlSagan`
+  already belonged to another Organization, (`@nasa-org`, duh).
 
-    By default, when `CarlSagan` was added to the Organization, he was set as a member
-    of the Organization, **paid by another scope**. This appears in the UI like this:
+  By default, when `CarlSagan` was added to the Organization, he was set as a member
+  of the Organization, **paid by another scope**. This appears in the UI like this:
 
-    ![paid, but not by the org](images/sponsorship-grey.png)
+  ![paid, but not by the org](/images/orgs/ships-paidother.png)
 
-    As a result, `CarlSagan` has the same permissions as `JacquesDerrida`, above.
+  As a result, `CarlSagan` has the same permissions as `JacquesDerrida`, above.
 
   - #### Paid for by Self
   
@@ -66,7 +73,7 @@ There are three types of Sponsorship that can occur:
     packages will appear in the Organization dashboard as someone who is `paid` but
     `not by the current org`. This appears in the UI the same as above:
 
-    ![paid, but not by the org](images/sponsorship-grey.png)`
+    ![paid, but not by the org](/images/orgs/ships-paidother.png)
 
   - #### Changing Sponsorship
 
@@ -84,7 +91,7 @@ There are three types of Sponsorship that can occur:
   `@ag-org`** by default. However, Super Admin, `@ag_dubs` opted to cancel `@ag-org`'s
   sponsorship of `EmmaGoldman`. This status appears in the UI like this:
 
-  ![not paid](images/sponsorship-red.png)
+  ![not paid](/images/orgs/ships-notpaid.png)
 
   As a result, `EmmaGoldman` can:
     - Be added to any/all of the Organization's teams
